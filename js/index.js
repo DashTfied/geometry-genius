@@ -57,9 +57,9 @@ document.getElementById('btn-pgram').addEventListener('click', function () {
 document.getElementById("btn-rhombus").addEventListener('click', function () {
     serial += 1;
     const shapeName = document.getElementById('name-rhombus').innerText;
-    const paraBase = getTextElementValueById('rhombus-d1')
-    const paraHeight = getTextElementValueById('rhombus-d2')
-    const areaCalculation = paraBase * paraHeight;
+    const rhombusD1 = getTextElementValueById('rhombus-d1')
+    const rhombusD2 = getTextElementValueById('rhombus-d2')
+    const areaCalculation = rhombusD1 * rhombusD2;
 
     displayData(serial, shapeName, areaCalculation);
 })
@@ -67,18 +67,18 @@ document.getElementById("btn-rhombus").addEventListener('click', function () {
 document.getElementById("btn-pentagon").addEventListener('click', function () {
     serial += 1;
     const shapeName = document.getElementById('title-pentagon').innerText;
-    const paraBase = getTextElementValueById('penta-p')
-    const paraHeight = getTextElementValueById('penta-b')
-    const areaCalculation = 0.5 * paraBase * paraHeight;
+    const pentaP = getTextElementValueById('penta-p')
+    const pentaB = getTextElementValueById('penta-b')
+    const areaCalculation = 0.5 * pentaP * pentaB;
     displayData(serial, shapeName, areaCalculation);
 })
 // card 6
 document.getElementById("btn-ellipse").addEventListener('click', function () {
     serial += 1;
     const shapeName = document.getElementById('title-ellipse').innerText;
-    const paraBase = getTextElementValueById('ellipse-a')
-    const paraHeight = getTextElementValueById('ellipse-b')
-    const area = 3.14 * paraBase * paraHeight;
+    const ellipseA = getTextElementValueById('ellipse-a')
+    const ellipseB = getTextElementValueById('ellipse-b')
+    const area = 3.14 * ellipseA * ellipseB;
     const areaCalculation = area.toFixed(2);
     displayData(serial, shapeName, areaCalculation);
 })
