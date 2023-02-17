@@ -17,7 +17,8 @@ document.getElementById('btn-triangle').addEventListener('click', function(){
     const areaCalculation = 0.5 * parseFloat(shapeInputField) * parseFloat(shapeInputField2);
     
 
-    displayData(serial, shapeName, areaCalculation)
+    displayData(serial, shapeName, areaCalculation);
+    
 })
 
 // card 2
@@ -37,7 +38,7 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     const areaCalculation = parseFloat(shapeInputField3) * parseFloat(shapeInputField4);
     
 
-    displayData(serial, shapeName, areaCalculation)
+    displayData(serial, shapeName, areaCalculation);
 })
 // card 3
 document.getElementById('btn-pgram').addEventListener('click', function(){
@@ -59,6 +60,7 @@ document.getElementById("btn-rhombus").addEventListener('click', function(){
     const paraBase = getTextElementValueById('rhombus-d1')
     const paraHeight = getTextElementValueById('rhombus-d2')
     const areaCalculation = paraBase * paraHeight;
+    
     displayData(serial, shapeName, areaCalculation);
 })
 // card 5
@@ -81,3 +83,6 @@ document.getElementById("btn-ellipse").addEventListener('click', function(){
     displayData(serial, shapeName, areaCalculation);
 })
 
+document.getElementById('btn-blog').addEventListener('click', function(){
+    window.location.href = "blog.html"
+})

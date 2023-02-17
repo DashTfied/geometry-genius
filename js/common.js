@@ -1,14 +1,15 @@
 
 // function for calculation area data display
 
-function displayData(serial, name, result, btn){
+function displayData(serial, name, result){
     const container = document.getElementById('table-container');
     const tr = document.createElement("tr");
     tr.innerHTML = `
     <td>${serial}</td>
     <td>${name}</td>
     <td>${result}</td>
-    <button class="btn btn-sm">Convert to m2</button>
+    <td>cm<sup>2</sup></td>
+    <button class="btn btn-secondary">Convert to m<sup>2</sup></button>
     </td>
     `;
     container.appendChild(tr);
