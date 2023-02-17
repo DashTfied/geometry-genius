@@ -11,7 +11,7 @@
 </head>
 <body>
     <header >
-        <div class="navbar bg-base-100 mx-auto mt-6">
+        <div class="navbar mx-auto mt-6 bg-emerald-100">
             <div class="navbar-start">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -32,7 +32,7 @@
                   <li><a>Item 3</a></li>
                 </ul>
               </div>
-              <a class="btn btn-ghost normal-case text-xl">Interactive <br> Geometry Book</a>
+              <a class="btn btn-ghost normal-case text-xl">Interactive <span class="text-slate-500">Geometry Genius</span></a>
             </div>
             
             <div class="navbar-end">
@@ -119,12 +119,12 @@
                   <img src="images/Pentagon.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Pentagon</h2>
+                  <h2 id="title-pentagon" class="card-title">Pentagon</h2>
                   <p>Area (A) =
                     0.5 X p X b</p>
-                  <h4>p = 6cm, b = 10cm</h4>
+                  <h4>p = <span id="penta-p">6</span> cm, b = <span id="penta-b">10</span> cm</h4>
                   <div class="card-actions">
-                    <button class="btn btn-outline btn-info">Calculate</button>
+                    <button id="btn-pentagon" class="btn btn-outline btn-info">Calculate</button>
                   </div>
                 </div>
               </div>
