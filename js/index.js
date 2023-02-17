@@ -70,3 +70,14 @@ document.getElementById("btn-pentagon").addEventListener('click', function(){
     const areaCalculation = 0.5 * paraBase * paraHeight;
     displayData(serial, shapeName, areaCalculation);
 })
+// card 6
+document.getElementById("btn-ellipse").addEventListener('click', function(){
+    serial += 1;
+    const shapeName = document.getElementById('title-ellipse').innerText;
+    const paraBase = getTextElementValueById('ellipse-a')
+    const paraHeight = getTextElementValueById('ellipse-b')
+    const area = 3.14 * paraBase * paraHeight;
+    const areaCalculation = area.toFixed(2);
+    displayData(serial, shapeName, areaCalculation);
+})
+
