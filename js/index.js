@@ -3,7 +3,7 @@
 let serial = 0;
 document.getElementById('btn-triangle').addEventListener('click', function(){
     serial +=1
-    const shapeName = document.getElementById('nam-triangle').innerText;
+    const shapeName = document.getElementById('name-triangle').innerText;
     const shapeInputField = document.getElementById('input-1').value;
     const shapeInputField2 = document.getElementById('input-2').value;
     const areaCalculation = 0.5 * parseFloat(shapeInputField) * parseFloat(shapeInputField2);
@@ -25,5 +25,23 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
 })
 // card 3
 document.getElementById('btn-pgram').addEventListener('click', function(){
-    console.log('i am clicked')
+    serial +=1;
+    const shapeName = document.getElementById('name-pgram').innerText;
+    const paraBase = getTextElementValueById('para-base')
+    const paraHeight = getTextElementValueById('para-height')
+
+    const areaCalculation = paraBase * paraHeight;
+    displayData(serial, shapeName, areaCalculation);
+
+    
+})
+
+// card 4
+document.getElementById("btn-rhombus").addEventListener('click', function(){
+    serial += 1;
+    const shapeName = document.getElementById('name-rhombus').innerText;
+    const paraBase = getTextElementValueById('rhombus-d1')
+    const paraHeight = getTextElementValueById('rhombus-d2')
+    const areaCalculation = paraBase * paraHeight;
+    displayData(serial, shapeName, areaCalculation);
 })

@@ -44,14 +44,14 @@
     <!-- calculation part -->
     <main>
         <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
-            <!-- card 1 -->
-           <div class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+            <div class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+               <!-- card 1 -->
             <div class="card w-full bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img src="images/Polygon 1.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 id="nam-triangle" class="card-title">Triangle</h2>
+                  <h2 id="name-triangle" class="card-title">Triangle</h2>
                   <p>Area (A) = 0.5 X b X h</p>
                   <input type="text" name="" id="input-1" placeholder="b - cm" >
                   <input type="text" name="" id="input-2" placeholder="h - cm" >
@@ -81,9 +81,9 @@
                   <img src="images/Parallelogram.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Parallelogram</h2>
+                  <h2 id="name-pgram"    class="card-title">Parallelogram</h2>
                   <p>Area (A) = b X h</p>
-                  <h4>b=10cm, h=12cm</h4>
+                  <h4>b=<span id="para-base">10</span>cm, h=<span id="para-height">12</span> cm</h4>
                   <div class="card-actions">
                     <button id="btn-pgram" class="btn btn-outline btn-info">Calculate</button>
                   </div>
@@ -95,7 +95,7 @@
                   <img src="images/Rhombus.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">Rhombus</h2>
+                  <h2 id="name-rhombus" class="card-title">Rhombus</h2>
                   <p>Area (A) =
                     d
                     1
@@ -104,12 +104,12 @@
                     2</p>
                   <h4>d
                     1
-                    = 16cm
+                    = <span id="rhombus-d1">16</span> cm
                     d
                     2
-                    = 8cm</h4>
+                    = <span id="rhombus-d2">8</span> cm</h4>
                   <div class="card-actions">
-                    <button class="btn btn-outline btn-info">Calculate</button>
+                    <button id="btn-rhombus" class="btn btn-outline btn-info">Calculate</button>
                   </div>
                 </div>
               </div>
