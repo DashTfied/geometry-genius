@@ -15,3 +15,9 @@ function displayData(serial, name, result, btn){
 }
 
 // common function for cards
+function getTextElementValueById(elementId){
+    const textElement = document.getElementById(elementId);
+    const textElementValueString = textElement.innerText;
+    const textElementValue = parseFloat(textElementValueString);
+    return textElementValue;
+}
