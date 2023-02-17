@@ -24,3 +24,6 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     displayData(serial, shapeName, areaCalculation)
 })
 // card 3
+document.getElementById('btn-pgram').addEventListener('click', function(){
+    console.log('i am clicked')
+})
