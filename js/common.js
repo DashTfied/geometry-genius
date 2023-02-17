@@ -1,7 +1,7 @@
 
 // function for calculation area data display
 
-function displayData(serial, name, result){
+function displayData(serial, name, result) {
     const container = document.getElementById('table-container');
     const tr = document.createElement("tr");
     tr.innerHTML = `
@@ -16,7 +16,7 @@ function displayData(serial, name, result){
 }
 
 // common function for cards
-function getTextElementValueById(elementId){
+function getTextElementValueById(elementId) {
     const textElement = document.getElementById(elementId);
     const textElementValueString = textElement.innerText;
     const textElementValue = parseFloat(textElementValueString);

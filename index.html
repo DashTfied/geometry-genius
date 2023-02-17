@@ -1,173 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
-    <html data-theme="light"></html>
-<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <html data-theme="light">
+
+    </html>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <header >
+    <header>
         <div class="navbar mx-auto mt-6 bg-emerald-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </label>
-                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li tabindex="0">
-                    <a class="justify-between">
-                      Parent
-                      <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-                    </a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li tabindex="0">
+                            <a class="justify-between">
+                                Parent
+                                <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                                </svg>
+                            </a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
                     </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost normal-case text-xl">Interactive <span class="text-slate-500">Geometry Genius</span></a>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl">Interactive <span class="text-slate-500">Geometry
+                        Genius</span></a>
             </div>
-            
+
             <div class="navbar-end">
-              <a id="btn-blog" class="btn btn-info">Blog</a>
+                <a id="btn-blog" class="btn btn-info">Blog</a>
             </div>
-          </div>
+        </div>
     </header>
     <!-- navbar ends -->
     <!-- calculation part -->
     <main>
         <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
-            <div class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
-               <!-- card 1 -->
-            <div class="card w-full bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="images/Polygon 1.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 id="name-triangle" class="card-title">Triangle</h2>
-                  <p>Area (A) = 0.5 X b X h</p>
-                  <input type="text" name="" id="input-1" placeholder="b - cm" >
-                  <input type="text" name="" id="input-2" placeholder="h - cm" >
-                  <div class="card-actions">
-                    <button id="btn-triangle" class="btn btn-outline btn-info">Calculate</button>
-                  </div>
+            <div
+                class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
+                <!-- card 1 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/Polygon 1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="name-triangle" class="card-title">Triangle</h2>
+                        <p>Area (A) = 0.5 X b X h</p>
+                        <input type="text" name="" id="input-1" placeholder="b - cm">
+                        <input type="text" name="" id="input-2" placeholder="h - cm">
+                        <div class="card-actions">
+                            <button id="btn-triangle" class="btn btn-outline btn-info">Calculate</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- card 2 -->
-            <div class="card w-full bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="images/Rectangle 9.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 id="name-rectangle" class="card-title">Rectangle</h2>
-                  <p>Area (A) = w X I</p>
-                  <input type="text" name="" id="input-3" placeholder="W - cm" >
-                  <input  type="text" name="" id="input-4" placeholder="L - cm" >
-                  <div class="card-actions">
-                    <button id="btn-rectangle" class="btn btn-outline btn-info">Calculate</button>
-                  </div>
+                <!-- card 2 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/Rectangle 9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="name-rectangle" class="card-title">Rectangle</h2>
+                        <p>Area (A) = w X I</p>
+                        <input type="text" name="" id="input-3" placeholder="W - cm">
+                        <input type="text" name="" id="input-4" placeholder="L - cm">
+                        <div class="card-actions">
+                            <button id="btn-rectangle" class="btn btn-outline btn-info">Calculate</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- card 3 -->
-              <div class="card w-full bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="images/Parallelogram.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 id="name-pgram"    class="card-title">Parallelogram</h2>
-                  <p>Area (A) = b X h</p>
-                  <h4>b=<span id="para-base">10</span>cm, h=<span id="para-height">12</span> cm</h4>
-                  <div class="card-actions">
-                    <button id="btn-pgram" class="btn btn-outline btn-info">Calculate</button>
-                  </div>
+                <!-- card 3 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/Parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="name-pgram" class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b X h</p>
+                        <h4>b=<span id="para-base">10</span>cm, h=<span id="para-height">12</span> cm</h4>
+                        <div class="card-actions">
+                            <button id="btn-pgram" class="btn btn-outline btn-info">Calculate</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- card 4 -->
-              <div class="card w-full bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="images/Rhombus.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 id="name-rhombus" class="card-title">Rhombus</h2>
-                  <p>Area (A) =
-                    d
-                    1
-                    X
-                    d
-                    2</p>
-                  <h4>d
-                    1
-                    = <span id="rhombus-d1">16</span> cm
-                    d
-                    2
-                    = <span id="rhombus-d2">8</span> cm</h4>
-                  <div class="card-actions">
-                    <button id="btn-rhombus" class="btn btn-outline btn-info">Calculate</button>
-                  </div>
+                <!-- card 4 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/Rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="name-rhombus" class="card-title">Rhombus</h2>
+                        <p>Area (A) =
+                            d
+                            1
+                            X
+                            d
+                            2</p>
+                        <h4>d
+                            1
+                            = <span id="rhombus-d1">16</span> cm
+                            d
+                            2
+                            = <span id="rhombus-d2">8</span> cm</h4>
+                        <div class="card-actions">
+                            <button id="btn-rhombus" class="btn btn-outline btn-info">Calculate</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- card 5 -->
-              <div class="card w-full bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="images/Pentagon.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 id="title-pentagon" class="card-title">Pentagon</h2>
-                  <p>Area (A) =
-                    0.5 X p X b</p>
-                  <h4>p = <span id="penta-p">6</span> cm, b = <span id="penta-b">10</span> cm</h4>
-                  <div class="card-actions">
-                    <button id="btn-pentagon" class="btn btn-outline btn-info">Calculate</button>
-                  </div>
+                <!-- card 5 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/Pentagon.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="title-pentagon" class="card-title">Pentagon</h2>
+                        <p>Area (A) =
+                            0.5 X p X b</p>
+                        <h4>p = <span id="penta-p">6</span> cm, b = <span id="penta-b">10</span> cm</h4>
+                        <div class="card-actions">
+                            <button id="btn-pentagon" class="btn btn-outline btn-info">Calculate</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <!-- card 6 -->
-              <div class="card w-full bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="images/Ellipse 1.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 id="title-ellipse" class="card-title">Ellipse</h2>
-                  <p>Area (A) = πab</p>
-                  <h4>a = <span id="ellipse-a">10</span> cm, b = <span id="ellipse-b">4</span> cm</h4>
-                  <div class="card-actions">
-                    <button id="btn-ellipse" class="btn btn-outline btn-info">Calculate</button>
-                  </div>
+                <!-- card 6 -->
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/Ellipse 1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 id="title-ellipse" class="card-title">Ellipse</h2>
+                        <p>Area (A) = πab</p>
+                        <h4>a = <span id="ellipse-a">10</span> cm, b = <span id="ellipse-b">4</span> cm</h4>
+                        <div class="card-actions">
+                            <button id="btn-ellipse" class="btn btn-outline btn-info">Calculate</button>
+                        </div>
+                    </div>
                 </div>
-              </div>
-           </div>
-              <!-- table -->
-              <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
+            </div>
+            <!-- table -->
+            <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
                 <h1 class="text-3xl text-center font-bold underline mt-5">
-                  Area Calculation</span>
+                    Area Calculation</span>
                 </h1>
                 <div class="overflow-x-auto">
-                  <table class="table w-full">
-                    <thead>
-                      <tr>
-                        <th>No</th>
-                        <th>Name</th>
-                        <th>Result</th>
-                        <th></th>
-                        
-                      </tr>
-                    </thead>
-                    <tbody id="table-container">
-                      
-                    </tbody>
-                  </table>
+                    <table class="table w-full">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Result</th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+
+                        </tbody>
+                    </table>
                 </div>
-              </div>
+            </div>
         </section>
     </main>
     <script src="js/common.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>
